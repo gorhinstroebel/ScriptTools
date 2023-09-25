@@ -1,0 +1,20 @@
+# Define the target host to ping
+$targetHost = "example.com"
+
+# Number of ping attempts
+$pingCount = 4
+
+# Perform the ping test
+try {
+    $pingResult = Test-Connection -ComputerName $targetHost -Count $pingCount -ErrorAction Stop
+
+    # Check if the ping was successful
+    if ($pingResult.StatusCode -eq 0) {
+        Write-Host "Ping to $targetHost was successful."
+        Write-Host "Response Time: $($pingResult.ResponseTime) ms"
+    } else {
+        Write-Host "Ping to $targetHost failed."
+    }
+} catch {
+    Write-Host "Error: $($_.Exception.Message)"
+}
