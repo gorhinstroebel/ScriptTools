@@ -1,7 +1,7 @@
-# tools
-Tools/scripts i have used everyday to make life easier in regards to technology.
+# ScriptTools
+Tools/Scripts I have used every day to make life easier in regards to technology.
 
-Scripts for Powershell, Bash, Python that are useful
+Scripts for Powershell, Bash, and Python that are useful
 
 
-We are currenlty working on a application that can be used for with this script
+We are currently working on a cross-platform application that can be used with these scripts
